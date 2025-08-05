@@ -1,9 +1,10 @@
-<html data-theme="light">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lingle</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="bulma.min.css">
 
@@ -14,13 +15,12 @@
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
           <figure class="image">
-            <img src="LingleLogoSmall.png"/>
+            <img src="assets/images/LingleLogoSmall.png" alt="Lingle Logo"/>
           </figure>
     
         </a>
     
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -75,27 +75,29 @@
     </nav>
 
 
-    <section class="hero is-medium">
+    <section class="hero is-medium hero-main">
       <div class="hero-body">
-        <div class=""style="margin-top: -50px">
-            <figure class="image image-center" style="width: 250px; margin-bottom: 40px">
-            
-                <img src="LingleLogo.png" />
+        <div class="hero-content">
+            <figure class="image image-center hero-logo" style="margin-bottom: 2.5rem;">
+                <img src="assets/images/LingleLogo.png" alt="Lingle Logo" />
               </figure>
         <div class="title has-text-centered">Sign up to receive updates about Lingle</div>
-        <div class="subtitle has-text-centered" style="margin-top: 20px; margin-bottom: 50px">Releasing Summer 2025</div>
+        <div class="subtitle has-text-centered" style="margin: 1.5rem 0 3rem;">Releasing Summer 2025</div>
         
-            <div class="field is-horizontal image-center" style="width: 700px">
-               
-                <div class="field-body">
-                    <div class="field">
+            <div class="email-signup-container">
+                <form id="emailSignupForm" class="email-signup-form" novalidate>
+                    <div class="email-input">
                       <p class="control">
-                        <input class="input" type="email" placeholder="Email" />
+                        <input id="email-input" class="input" type="email" placeholder="Email address" required aria-describedby="email-input-error" aria-label="Enter your email address to join the waitlist" />
                       </p>
+                      <div id="email-input-error" class="help is-danger is-hidden" role="alert"></div>
                     </div>
-                  </div>
-                <div class="button is-link" style="margin-left: 10px">Sign up</div>
-              </div>
+                    <div class="email-button">
+                        <button id="email-signup-btn" type="submit" class="button is-link">Sign up</button>
+                    </div>
+                </form>
+                <div id="signup-feedback" role="alert" aria-live="polite"></div>
+            </div>
        </div>
       </div>
     
@@ -110,7 +112,7 @@
             <div class="column">
           <strong>Lingle</strong> by <a href="/about.html">Ari Yamashita and Nikhil Mahesh</a>.
 
-          <div class="buttons " style="margin-top: 20px; width: 80%; margin-left: auto; margin-right: auto">
+          <div class="footer-buttons">
             <a class="button is-small" href="/">
               Home
             </a>
@@ -144,7 +146,7 @@
       <div class="column">
         <p class="" style="">Coming soon to the app store.</p>
         <figure class="image image-center" style="width: 150px;">
-          <img src="download-app-store.png" style="border-radius: 20px;margin-bottom: 5px"/>
+          <img src="assets/images/download-app-store.png" alt="Download on the App Store" style="border-radius: 20px; margin-bottom: 5px"/>
           <p class="" style="font-size: 0.65em">Apple and the Apple logo are trademarks of Apple Inc.</p>
           </figure>
         </div>

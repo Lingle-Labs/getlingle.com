@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Lingle</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bulma.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <figure class="image">
+            <img src="assets/images/LingleLogoSmall.png" alt="Lingle Logo"/>
+          </figure>
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/development.html">
+            Development
+          </a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/gallery.html">
+                Gallery
+              </a>
+              <a class="navbar-item" href="/demo.html">
+                Demo
+              </a>
+              
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="/contact.html">
+                Contact us
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-link" href="/download.html">
+                <strong>Join the Waitlist</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <h1 class="title has-text-centered">Join the Beta</h1>
+              <h2 class="subtitle has-text-centered">
+                Be among the first to experience Lingle's AI-powered language learning platform
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section beta-form">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-6">
+            <div class="box">
+              <h3 class="title is-4 has-text-centered">Beta Signup Form</h3>
+              <form id="betaSignupForm" novalidate>
+                <!-- Form feedback area -->
+                <div id="formFeedback" class="notification is-hidden" role="alert" aria-live="polite"></div>
+                
+                <div class="field">
+                  <label class="label" for="name">Full Name <span class="has-text-danger">*</span></label>
+                  <div class="control">
+                    <input class="input" type="text" id="name" placeholder="Enter your full name" name="name" required aria-describedby="name-error">
+                  </div>
+                  <div id="name-error" class="help is-danger is-hidden" role="alert"></div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="email">Email Address <span class="has-text-danger">*</span></label>
+                  <div class="control">
+                    <input class="input" type="email" id="email" placeholder="Enter your email address" name="email" required aria-describedby="email-error">
+                  </div>
+                  <div id="email-error" class="help is-danger is-hidden" role="alert"></div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="languages">Language(s) you want to learn</label>
+                  <div class="control">
+                    <input class="input" type="text" id="languages" placeholder="e.g., Spanish, French, Japanese" name="languages" aria-describedby="languages-error">
+                  </div>
+                  <div id="languages-error" class="help is-danger is-hidden" role="alert"></div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="experience">Current language learning experience</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select id="experience" name="experience" aria-describedby="experience-error">
+                        <option value="">Select your level</option>
+                        <option value="beginner">Beginner - Just starting out</option>
+                        <option value="intermediate">Intermediate - Some experience</option>
+                        <option value="advanced">Advanced - Fluent speaker</option>
+                        <option value="native">Native/Bilingual</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div id="experience-error" class="help is-danger is-hidden" role="alert"></div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="interests">What features are you most excited about?</label>
+                  <div class="control">
+                    <textarea class="textarea" id="interests" placeholder="Tell us what interests you most about Lingle's AI-powered features..." name="interests" aria-describedby="interests-error"></textarea>
+                  </div>
+                  <div id="interests-error" class="help is-danger is-hidden" role="alert"></div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="comments">Additional comments or questions</label>
+                  <div class="control">
+                    <textarea class="textarea" id="comments" placeholder="Any specific feedback, questions, or suggestions?" name="comments" aria-describedby="comments-error"></textarea>
+                  </div>
+                  <div id="comments-error" class="help is-danger is-hidden" role="alert"></div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input type="checkbox" id="newsletter" name="newsletter" checked>
+                      I'd like to receive updates about Lingle's development and launch
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field is-grouped is-grouped-centered">
+                  <div class="control">
+                    <button class="button is-link is-large" type="submit">
+                      <strong>Join the Beta</strong>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background-color: rgba(0, 0, 0, 0.07);">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8 has-text-centered">
+            <h3 class="title is-4">Why Join the Beta?</h3>
+            <div class="columns">
+              <div class="column">
+                <div class="box">
+                  <h4 class="title is-5 has-text-info">Early Access</h4>
+                  <p>Be the first to try our AI-powered language learning features</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="box">
+                  <h4 class="title is-5 has-text-success">Shape the Product</h4>
+                  <p>Your feedback will directly influence Lingle's development</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="box">
+                  <h4 class="title is-5 has-text-warning">Free Access</h4>
+                  <p>Beta testers get extended free access to premium features</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <div class="columns">
+            <div class="column">
+              <strong>Lingle</strong> by <a href="/about.html">Ari Yamashita and Nikhil Mahesh</a>.
+
+              <div class="footer-buttons">
+                <a class="button is-small" href="/about.html">
+                  About
+                </a>
+                <a class="button is-small" href="/development.html">
+                  Development
+                </a>
+                <a class="button is-small" href="/gallery.html">
+                 Gallery
+                </a>
+                <a class="button is-small" href="/demo.html">
+                Demo
+                </a>
+       
+                <a class="button is-small" href="/contact.html">
+                  Contact us
+                </a>
+              </div>
+            </div>
+            <div class="column">
+              <p class="">Questions about the beta? Email us!</p>
+              <div class="buttons">
+                <a class="button is-info" style="margin-left: auto; margin-right: auto" href="mailto:hello@getlingle.com">
+                  <strong>Contact Us</strong>
+                </a>
+              </div>
+            </div>
+            <div class="column">
+              <p class="">Coming soon to the app store.</p>
+              <figure class="image image-center" style="width: 150px;">
+                <img src="assets/images/download-app-store.png" alt="Download on the App Store" style="border-radius: 20px; margin-bottom: 5px"/>
+                <p class="" style="font-size: 0.65em">Apple and the Apple logo are trademarks of Apple Inc.</p>
+              </figure>
+            </div>
+          </div>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Beta form validation and submission
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('betaSignupForm');
+        const formFeedback = document.getElementById('formFeedback');
+        
+        // Validation functions
+        function validateName(name) {
+          const trimmed = name.trim();
+          if (!trimmed) {
+            return 'Full name is required.';
+          }
+          if (trimmed.length < 2) {
+            return 'Name must be at least 2 characters long.';
+          }
+          if (!/^[a-zA-Z\s'-]+$/.test(trimmed)) {
+            return 'Name can only contain letters, spaces, hyphens, and apostrophes.';
+          }
+          return null;
+        }
+        
+        function validateEmail(email) {
+          const trimmed = email.trim();
+          if (!trimmed) {
+            return 'Email address is required.';
+          }
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(trimmed)) {
+            return 'Please enter a valid email address.';
+          }
+          return null;
+        }
+        
+        function showFieldError(fieldName, message) {
+          const field = document.getElementById(fieldName);
+          const errorDiv = document.getElementById(fieldName + '-error');
+          
+          field.classList.add('is-danger');
+          field.setAttribute('aria-invalid', 'true');
+          errorDiv.textContent = message;
+          errorDiv.classList.remove('is-hidden');
+        }
+        
+        function clearFieldError(fieldName) {
+          const field = document.getElementById(fieldName);
+          const errorDiv = document.getElementById(fieldName + '-error');
+          
+          field.classList.remove('is-danger');
+          field.setAttribute('aria-invalid', 'false');
+          errorDiv.textContent = '';
+          errorDiv.classList.add('is-hidden');
+        }
+        
+        function showFormFeedback(message, type) {
+          formFeedback.textContent = message;
+          formFeedback.className = 'notification ' + (type === 'success' ? 'is-success' : 'is-danger');
+          formFeedback.classList.remove('is-hidden');
+          formFeedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        
+        function hideFormFeedback() {
+          formFeedback.classList.add('is-hidden');
+        }
+        
+        // Real-time validation
+        document.getElementById('name').addEventListener('blur', function() {
+          const error = validateName(this.value);
+          if (error) {
+            showFieldError('name', error);
+          } else {
+            clearFieldError('name');
+          }
+        });
+        
+        document.getElementById('email').addEventListener('blur', function() {
+          const error = validateEmail(this.value);
+          if (error) {
+            showFieldError('email', error);
+          } else {
+            clearFieldError('email');
+          }
+        });
+        
+        // Clear errors on input
+        ['name', 'email', 'languages', 'experience', 'interests', 'comments'].forEach(function(fieldName) {
+          const field = document.getElementById(fieldName);
+          field.addEventListener('input', function() {
+            if (this.classList.contains('is-danger')) {
+              clearFieldError(fieldName);
+            }
+          });
+        });
+        
+        // Form submission
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          hideFormFeedback();
+          let hasErrors = false;
+          
+          // Validate name
+          const nameError = validateName(document.getElementById('name').value);
+          if (nameError) {
+            showFieldError('name', nameError);
+            hasErrors = true;
+          } else {
+            clearFieldError('name');
+          }
+          
+          // Validate email
+          const emailError = validateEmail(document.getElementById('email').value);
+          if (emailError) {
+            showFieldError('email', emailError);
+            hasErrors = true;
+          } else {
+            clearFieldError('email');
+          }
+          
+          if (hasErrors) {
+            showFormFeedback('Please correct the errors above and try again.', 'error');
+            return;
+          }
+          
+          // Show loading state
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalText = submitButton.innerHTML;
+          submitButton.innerHTML = '<span class="loader"></span> Submitting...';
+          submitButton.disabled = true;
+          
+          // Simulate form submission
+          setTimeout(function() {
+            showFormFeedback('Thank you for signing up for the Lingle beta! We\'ll be in touch soon with more details about the beta program.', 'success');
+            form.reset();
+            
+            // Reset button
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+            
+            // Clear any remaining field states
+            ['name', 'email', 'languages', 'experience', 'interests', 'comments'].forEach(function(fieldName) {
+              clearFieldError(fieldName);
+            });
+          }, 1500);
+        });
+      });
+    </script>
+
+  </body>
+  <script src="script.js"></script>
+</html>
