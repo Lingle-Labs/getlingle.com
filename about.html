@@ -3,94 +3,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lingle</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="bulma.min.css">
+  <title>Lingle – About</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   </head>
-  <body>
+  <body class="glass-bg">
+    <div aria-hidden="true" class="gradient-anim-bg"></div>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar glass-nav" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <figure class="image">
-            <img src="assets/images/LingleLogoSmall.png" alt="Lingle Logo"/>
-          </figure>
-    
+  <a class="navbar-item" href="index.html" aria-label="Lingle Home">
+          <img src="assets/images/LingleLogoSmall.png" alt="Lingle logo" />
         </a>
-    
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-    
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-start">
-        
-    
-          <a class="navbar-item" href="/about.html">
-            About
-          </a>
-          <a class="navbar-item" href="/development.html">
-            Development
-          </a>
-    
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="/gallery.html">
-                Gallery
-              </a>
-              <a class="navbar-item" href="/demo.html">
-                Demo
-              </a>
-              
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="/contact.html">
-                Contact us
-              </a>
-            </div>
-          </div>
+          <a class="navbar-item" href="index.html#features">Features</a>
+          <a class="navbar-item" href="about.html">About</a>
         </div>
-    
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-link" href="/download.html">
-                <strong>Join the Waitlist</strong>
-              </a>
-              <!-- <a class="button is-light">
-                Log in
-              </a> -->
+              <a class="button is-success" href="contact.html"><strong>Join the Beta</strong></a>
             </div>
           </div>
         </div>
       </div>
     </nav>
 
+    <section id="top" class="hero is-medium hero-main glass-hero">
+      <div class="hero-body">
+        <div class="container has-text-centered glass-panel">
+          <h1 class="about-title">About</h1>
+          <p class="about-description">Lingle is an AI-powered language learning app that helps you learn through writing. Created by two passionate students who believe that the best way to learn a language is through natural expression and personalized feedback.</p>
+        </div>
+      </div>
+    </section>
 
-    <section class="about-hero">
-      <div class="about-container">
-        <h1 class="about-title">About</h1>
-        <p class="about-description">Lingle is a passion project developed by Ari Yamashita and Nikhil Mahesh. Combining their interests of language and AI, they created an app to help people practice language in a fun and natural way.</p>
-        
+    <section class="section">
+      <div class="container">
         <div class="columns team-section">
           <div class="column is-half">
-            <div class="team-member">
+            <div class="team-member glass-card">
               <div class="team-member-image">
                 <img src="assets/images/ari.jpg" alt="Ari Yamashita" />
               </div>
               <div class="team-member-bio">
                 <h3 class="team-member-name">Ari Yamashita (Class of 2027)</h3>
                 <div class="team-member-link-container">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="button is-small is-outlined is-link team-member-link-btn">
+                  <a href="https://instagram.com/ari.yamashita09" target="_blank" rel="noopener noreferrer" class="button is-small is-outlined is-link team-member-link-btn">
                     <span class="icon is-small">
                       <i class="fab fa-instagram" aria-hidden="true"></i>
                     </span>
@@ -102,7 +71,7 @@
             </div>
           </div>
           <div class="column is-half">
-            <div class="team-member">
+            <div class="team-member glass-card">
               <div class="team-member-image">
                 <img src="assets/images/nikhil.jpg" alt="Nikhil Mahesh" />
               </div>
@@ -124,56 +93,13 @@
       </div>
     </section>
 
-    <footer class="footer">
+  <footer class="footer glass-footer">
       <div class="content has-text-centered">
-        <p>
-          <div class="columns">
-
-            <div class="column">
-          <strong>Lingle</strong> by <a href="/about.html">Ari Yamashita and Nikhil Mahesh</a>.
-
-          <div class="buttons footer-nav">
-            <a class="button is-small" href="/">
-              Home
-            </a>
-            <a class="button is-small" href="/development.html">
-              Development
-            </a>
-            <a class="button is-small" href="/gallery.html">
-             Gallery
-            </a>
-            <a class="button is-small" href="/demo.html">
-            Demo
-            </a>
-   
-            <a class="button is-small" href="/contact.html">
-              Contact us
-            </a>
-          </div>
-      </div>
-      <div class="column">
-        <p class="footer-text">Sign up for the email list and beta (coming soon).</p>
-        <div class="buttons">
-          <a class="button is-link" href="/download.html" style="margin-left: auto; margin-right: auto">
-            <strong>Join the Waitlist</strong>
-          </a>
-      
-        </div>
-      </div>
-      <div class="column">
-        <p class="footer-text">Coming soon to the app store.</p>
-        <figure class="image image-center" style="width: 150px;">
-          <img src="assets/images/download-app-store.png" alt="Download on the App Store" class="app-store-badge"/>
-          <p class="footer-caption">Apple and the Apple logo are trademarks of Apple Inc.</p>
-          </figure>
-        </div>
-      </div>
-         
-          </div>
-        </p>
+        <p><strong>Lingle</strong> by <a href="about.html">Ari Yamashita and Nikhil Mahesh</a></p>
+        <p><a href="contact.html">Contact</a> | <a href="about.html">About</a></p>
       </div>
     </footer>
 
+    <script src="script.js" defer></script>
   </body>
-  <script src="script.js"></script>
 </html>

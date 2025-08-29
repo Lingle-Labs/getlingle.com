@@ -1,997 +1,187 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lingle</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="bulma.min.css">
-    
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lingle – AI-Powered Language Learning Through Writing</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body>
-
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <body class="glass-bg">
+    <div aria-hidden="true" class="gradient-anim-bg"></div>
+    <nav class="navbar glass-nav" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <figure class="image">
-            <img src="assets/images/LingleLogoSmall.png" alt="Lingle Logo"/>
-          </figure>
-    
+  <a class="navbar-item" href="index.html" aria-label="Lingle Home">
+          <img src="assets/images/LingleLogoSmall.png" alt="Lingle logo" />
         </a>
-    
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-    
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-start">
-        
-    
-          <a class="navbar-item" href="about.html">
-            About
-          </a>
-          <a class="navbar-item" href="development.html">
-            Development
-          </a>
-          <a class="navbar-item" href="tips.html">
-            Tips
-          </a>
-    
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="gallery.html">
-                Gallery
-              </a>
-              <a class="navbar-item" href="demo.html">
-                Demo
-              </a>
-              
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="contact.html">
-                Contact us
-              </a>
-            </div>
-          </div>
+          <a class="navbar-item" href="index.html#features">Features</a>
+          <a class="navbar-item" href="about.html">About</a>
         </div>
-    
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-success" href="contact.html">
-                <strong>Join the Beta</strong>
-              </a>
-              <a class="button is-link" href="download.html">
-                <strong>Join the Waitlist</strong>
-              </a>
-              <!-- <a class="button is-light">
-                Log in
-              </a> -->
+              <a class="button is-success" href="contact.html"><strong>Join the Beta</strong></a>
             </div>
           </div>
         </div>
       </div>
     </nav>
 
-
-    <section class="hero is-small hero-main">
+  <section id="top" class="hero is-medium hero-main glass-hero">
       <div class="hero-body">
-        <div class="hero-content">
-        <div class="columns">
-          <div class="column is-half">
-      <div class="vertical-center">
-          <figure class="image hero-logo">
-            <img src="assets/images/LingleLogo.png" alt="Lingle Logo" />
+    <div class="container has-text-centered glass-panel">
+          <figure class="image hero-logo-simple">
+            <img src="assets/images/LingleLogo.png" alt="Lingle logo large" />
           </figure>
-          <div>
-          <p class="subtitle hero-subtitle">Reimagine language learning with AI</p>
-          </div>
-          <div>
-            <div class="buttons hero-buttons">
-              <a class="button is-success is-large" href="contact.html">
-                <strong>Join the Beta</strong>
-              </a>
-              <a class="button is-link is-medium" href="download.html">
-                <strong>Join the Waitlist</strong>
-              </a>
-            </div>
-          </div>
-      </div>
-
-          </div>
-          <div class="column is-half">
-          
-          <figure class="image vertical-center-image image-center hero-image">
-            <img src="assets/images/screenshot-portrait.png" alt="Lingle App Screenshot" />
-          </figure>
+          <h1 class="title mb-2">AI-Powered Language Learning Through Writing</h1>
+          <p class="subtitle mb-4">Learn languages naturally by writing with intelligent AI feedback and personalized guidance.</p>
+          <div class="buttons is-centered">
+            <a class="button is-success is-medium" href="contact.html"><strong>Join the Beta</strong></a>
           </div>
         </div>
       </div>
-
-        
-      </div>
-      
-      <!-- Beta Announcement Section -->
-      <section class="hero is-medium beta-section-bg">
-        <div class="hero-body beta-section-padding">
-          <div class="container has-text-centered">
-            <h1 class="title has-text-white section-hero-title">
-              Beta Testing Now Open!
-            </h1>
-            <h2 class="subtitle has-text-white section-hero-subtitle">
-              Be among the first to experience Lingle's revolutionary AI-powered language learning
-            </h2>
-            <div class="columns is-centered">
-              <div class="column is-8">
-                <div class="box" style="background: rgba(255, 255, 255, 0.95); padding: var(--space-8);">
-                  <div class="columns">
-                    <div class="column">
-                      <h4 class="title is-5 has-text-success">🎯 Personalized Learning</h4>
-                      <p>AI adapts to your learning style and pace</p>
-                    </div>
-                    <div class="column">
-                      <h4 class="title is-5 has-text-info">📝 Smart Feedback</h4>
-                      <p>Get detailed grammar and writing corrections</p>
-                    </div>
-                    <div class="column">
-                      <h4 class="title is-5 has-text-warning">🎮 Gamified Experience</h4>
-                      <p>Learn through engaging games and challenges</p>
-                    </div>
-                  </div>
-                  <div class="mt-6">
-                    <a class="button is-success is-large" href="contact.html">
-                      <strong>Join the Beta Now</strong>
-                    </a>
-                  </div>
-                  
-                  <!-- Social Media Sharing Buttons -->
-                  <div class="social-sharing-buttons" style="margin-top: 30px; text-align: center;">
-                    <p class="has-text-grey" style="margin-bottom: 15px; font-size: 0.9rem;">Share the AI language learning revolution:</p>
-                    <div class="buttons is-centered">
-                      <button class="button is-info is-small social-share-btn" onclick="shareOnTwitter('Check out Lingle - AI-powered language learning that actually works! 🚀', 'https://getlingle.com')" style="margin: 5px;">
-                        <span class="icon" style="font-size: 1rem;">🐦</span>
-                        <span>Tweet</span>
-                      </button>
-                      <button class="button is-primary is-small social-share-btn" onclick="shareOnFacebook('https://getlingle.com')" style="margin: 5px;">
-                        <span class="icon" style="font-size: 1rem;">📘</span>
-                        <span>Share</span>
-                      </button>
-                      <button class="button is-success is-small social-share-btn" onclick="shareOnWhatsApp('Check out Lingle - AI-powered language learning! https://getlingle.com')" style="margin: 5px;">
-                        <span class="icon" style="font-size: 1rem;">💬</span>
-                        <span>Share</span>
-                      </button>
-                      <button class="button is-dark is-small social-share-btn" onclick="copyToClipboard('https://getlingle.com', this)" style="margin: 5px;">
-                        <span class="icon" style="font-size: 1rem;">🔗</span>
-                        <span>Copy Link</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Interactive Language Learning Preview Widget -->
-      <section class="hero is-medium preview-section-bg">
-        <div class="container">
-          <h1 class="title has-text-centered section-hero-title text-primary mb-10">
-            Experience Lingle in Action
-          </h1>
-          <div class="columns is-multiline">
-            <!-- Daily Journal Preview -->
-            <div class="column is-4">
-              <div class="preview-widget" class="preview-widget">
-                <div class="has-text-centered" style="margin-bottom: 20px">
-                  <span class="icon is-large" style="color: #3e8ed0; font-size: 3rem">📝</span>
-                  <h3 class="title is-4 has-text-info" style="margin-top: 10px">Daily Journal Preview</h3>
-                </div>
-                <div class="journal-demo" style="border: 2px dashed #e1e5e9; border-radius: 8px; padding: 15px; margin-bottom: 15px; min-height: 120px; background: #fafafa">
-                  <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px"><strong>Today's Prompt:</strong> Describe your ideal weekend</p>
-                  <div class="journal-input" style="background: white; border-radius: 5px; padding: 10px; border: 1px solid #ddd" onclick="tryJournal()">
-                    <p style="color: #888; font-style: italic" id="journal-text">Click to try writing...</p>
-                  </div>
-                </div>
-                <div class="ai-feedback" style="background: #e8f6f3; border-radius: 8px; padding: 12px; margin-bottom: 15px">
-                  <p style="font-size: 0.85rem; color: #2d5a87"><strong>AI Feedback:</strong> Great use of descriptive language! Consider adding more varied sentence structures.</p>
-                </div>
-                <button class="button is-info is-fullwidth" onclick="tryJournal()">Try It Now</button>
-              </div>
-            </div>
-
-            <!-- Translation Game Demo -->
-            <div class="column is-4">
-              <div class="preview-widget" class="preview-widget">
-                <div class="has-text-centered" style="margin-bottom: 20px">
-                  <span class="icon is-large" style="color: #48c78e; font-size: 3rem">🎮</span>
-                  <h3 class="title is-4 has-text-success" style="margin-top: 10px">Translation Game</h3>
-                </div>
-                <div class="game-demo" style="background: #f8f9fa; border-radius: 8px; padding: 15px; margin-bottom: 15px; min-height: 120px">
-                  <div class="game-progress" style="background: #e9ecef; border-radius: 10px; height: 8px; margin-bottom: 15px">
-                    <div class="progress-bar" style="background: linear-gradient(90deg, #48c78e, #3e8ed0); height: 100%; width: 60%; border-radius: 10px; transition: width 0.3s ease"></div>
-                  </div>
-                  <div class="game-question" style="text-align: center; margin-bottom: 15px">
-                    <p style="font-size: 1.1rem; color: #2c3e50; margin-bottom: 10px"><strong>Translate:</strong></p>
-                    <p style="font-size: 1.2rem; color: #495057" id="phrase-to-translate">Good morning!</p>
-                  </div>
-                  <div class="game-options" style="display: flex; flex-direction: column; gap: 8px">
-                    <button class="button is-small translation-option" onclick="selectTranslation(this, false)" style="text-align: left">A) Buenos días</button>
-                    <button class="button is-small translation-option" onclick="selectTranslation(this, false)" style="text-align: left">B) Buenas noches</button>
-                    <button class="button is-small translation-option" onclick="selectTranslation(this, false)" style="text-align: left">C) Buenas tardes</button>
-                  </div>
-                </div>
-                <div class="game-stats" style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.9rem">
-                  <span>Score: <strong id="game-score">480</strong></span>
-                  <span>Streak: <strong id="game-streak">3</strong></span>
-                </div>
-                <button class="button is-success is-fullwidth" onclick="startGame()">Play Demo</button>
-              </div>
-            </div>
-
-            <!-- Smart Feedback Showcase -->
-            <div class="column is-4">
-              <div class="preview-widget" class="preview-widget">
-                <div class="has-text-centered" style="margin-bottom: 20px">
-                  <span class="icon is-large" style="color: #ff6b6b; font-size: 3rem">🤖</span>
-                  <h3 class="title is-4 has-text-danger" style="margin-top: 10px">Smart Feedback</h3>
-                </div>
-                <div class="feedback-demo" style="border: 1px solid #e1e5e9; border-radius: 8px; padding: 15px; margin-bottom: 15px; min-height: 120px">
-                  <div class="original-text" style="background: #fff5f5; border-radius: 5px; padding: 10px; margin-bottom: 10px">
-                    <p style="font-size: 0.9rem; color: #e53e3e; text-decoration: line-through">I are going to the store yesterday.</p>
-                  </div>
-                  <div class="corrected-text" style="background: #f0fff4; border-radius: 5px; padding: 10px; margin-bottom: 10px">
-                    <p style="font-size: 0.9rem; color: #38a169">I went to the store yesterday.</p>
-                  </div>
-                  <div class="feedback-explanation" style="background: #f7fafc; border-radius: 5px; padding: 10px">
-                    <p style="font-size: 0.8rem; color: #4a5568">
-                      <strong>Grammar Fix:</strong> Changed "are going" to "went" for past tense consistency with "yesterday"
-                    </p>
-                  </div>
-                </div>
-                <div class="feedback-stats" style="margin-bottom: 15px">
-                  <div class="columns is-mobile is-gapless" style="font-size: 0.8rem; text-align: center">
-                    <div class="column">
-                      <span class="has-text-success">✓ Grammar</span>
-                    </div>
-                    <div class="column">
-                      <span class="has-text-info">✓ Vocabulary</span>
-                    </div>
-                    <div class="column">
-                      <span class="has-text-warning">! Style</span>
-                    </div>
-                  </div>
-                </div>
-                <button class="button is-danger is-fullwidth" onclick="showFeedback()">Get AI Feedback</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Success Stories & Testimonials Section -->
-      <section class="hero is-medium testimonials-section" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 80px 30px">
-        <div class="hero-body">
-          <div class="container">
-            <div class="has-text-centered" style="margin-bottom: 60px">
-              <h1 class="title" style="font-size: 2.8rem; color: #2c3e50; margin-bottom: 20px">
-                Success Stories from Our Beta Community
-              </h1>
-              <h2 class="subtitle" style="font-size: 1.3rem; color: #495057; max-width: 800px; margin: 0 auto">
-                Join thousands of learners who are already transforming their language skills with Lingle's AI-powered approach
-              </h2>
-            </div>
-
-            <!-- Achievement Stats -->
-            <div class="columns is-multiline has-text-centered" style="margin-bottom: 60px">
-              <div class="column is-3">
-                <div class="achievement-stat" style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08)">
-                  <div class="stat-number" style="font-size: 3rem; font-weight: 700; color: #48c78e; margin-bottom: 10px">2,847</div>
-                  <div class="stat-label" style="font-size: 1rem; color: #6c757d; font-weight: 500">Active Beta Users</div>
-                </div>
-              </div>
-              <div class="column is-3">
-                <div class="achievement-stat" style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08)">
-                  <div class="stat-number" style="font-size: 3rem; font-weight: 700; color: #3e8ed0; margin-bottom: 10px">94%</div>
-                  <div class="stat-label" style="font-size: 1rem; color: #6c757d; font-weight: 500">Improvement Rate</div>
-                </div>
-              </div>
-              <div class="column is-3">
-                <div class="achievement-stat" style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08)">
-                  <div class="stat-number" style="font-size: 3rem; font-weight: 700; color: #ff6b6b; margin-bottom: 10px">156K</div>
-                  <div class="stat-label" style="font-size: 1rem; color: #6c757d; font-weight: 500">Journal Entries</div>
-                </div>
-              </div>
-              <div class="column is-3">
-                <div class="achievement-stat" style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08)">
-                  <div class="stat-number" style="font-size: 3rem; font-weight: 700; color: #ffd93d; margin-bottom: 10px">4.9★</div>
-                  <div class="stat-label" style="font-size: 1rem; color: #6c757d; font-weight: 500">Beta Rating</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonials Carousel -->
-            <div class="testimonials-carousel">
-              <div class="testimonials-container" id="testimonialsContainer" style="display: flex; transition: transform 0.5s ease; overflow: hidden">
-                
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card" style="min-width: 100%; padding: 0 20px">
-                  <div class="columns is-vcentered">
-                    <div class="column is-4">
-                      <div class="testimonial-avatar" style="text-align: center">
-                        <div class="avatar-circle" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #48c78e, #3e8ed0); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2.5rem; font-weight: 700">
-                          S
-                        </div>
-                        <h4 class="testimonial-name" style="font-size: 1.3rem; font-weight: 600; color: #2c3e50; margin-bottom: 5px">Sarah Chen</h4>
-                        <p class="testimonial-role" style="color: #6c757d; font-size: 0.9rem">Marketing Professional</p>
-                        <div class="testimonial-badges" style="margin-top: 15px">
-                          <span class="tag is-success is-light" style="margin: 2px">30-day streak</span>
-                          <span class="tag is-info is-light" style="margin: 2px">Advanced level</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column is-8">
-                      <div class="testimonial-content" style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative">
-                        <div class="quote-icon" style="position: absolute; top: -10px; left: 30px; font-size: 3rem; color: #48c78e; line-height: 1">"</div>
-                        <p class="testimonial-text" style="font-size: 1.1rem; line-height: 1.7; color: #495057; margin-bottom: 25px; font-style: italic">
-                          "Lingle's AI feedback transformed my Spanish writing. In just 6 weeks, I went from basic sentences to writing complex business emails. The daily journal prompts kept me engaged, and the translation games made learning addictive!"
-                        </p>
-                        <div class="testimonial-metrics" style="border-top: 1px solid #e9ecef; padding-top: 20px">
-                          <div class="columns is-mobile">
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #48c78e">87%</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Grammar Improvement</div>
-                              </div>
-                            </div>
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #3e8ed0">42</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Days Active</div>
-                              </div>
-                            </div>
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #ff6b6b">2,450</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Words Learned</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card" style="min-width: 100%; padding: 0 20px">
-                  <div class="columns is-vcentered">
-                    <div class="column is-4">
-                      <div class="testimonial-avatar" style="text-align: center">
-                        <div class="avatar-circle" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #ff6b6b, #ffd93d); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2.5rem; font-weight: 700">
-                          M
-                        </div>
-                        <h4 class="testimonial-name" style="font-size: 1.3rem; font-weight: 600; color: #2c3e50; margin-bottom: 5px">Marcus Rodriguez</h4>
-                        <p class="testimonial-role" style="color: #6c757d; font-size: 0.9rem">College Student</p>
-                        <div class="testimonial-badges" style="margin-top: 15px">
-                          <span class="tag is-warning is-light" style="margin: 2px">Top 10% scorer</span>
-                          <span class="tag is-danger is-light" style="margin: 2px">Speed learner</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column is-8">
-                      <div class="testimonial-content" style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative">
-                        <div class="quote-icon" style="position: absolute; top: -10px; left: 30px; font-size: 3rem; color: #ff6b6b; line-height: 1">"</div>
-                        <p class="testimonial-text" style="font-size: 1.1rem; line-height: 1.7; color: #495057; margin-bottom: 25px; font-style: italic">
-                          "As a busy college student, I needed something flexible. Lingle's translation games are perfect for quick study sessions between classes. I've improved my French pronunciation by 60% and it's actually fun!"
-                        </p>
-                        <div class="testimonial-metrics" style="border-top: 1px solid #e9ecef; padding-top: 20px">
-                          <div class="columns is-mobile">
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #ff6b6b">60%</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Pronunciation Boost</div>
-                              </div>
-                            </div>
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #ffd93d">28</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Days Active</div>
-                              </div>
-                            </div>
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #3e8ed0">1,890</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Game Points</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card" style="min-width: 100%; padding: 0 20px">
-                  <div class="columns is-vcentered">
-                    <div class="column is-4">
-                      <div class="testimonial-avatar" style="text-align: center">
-                        <div class="avatar-circle" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #3e8ed0, #9b59b6); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2.5rem; font-weight: 700">
-                          A
-                        </div>
-                        <h4 class="testimonial-name" style="font-size: 1.3rem; font-weight: 600; color: #2c3e50; margin-bottom: 5px">Aisha Patel</h4>
-                        <p class="testimonial-role" style="color: #6c757d; font-size: 0.9rem">Software Developer</p>
-                        <div class="testimonial-badges" style="margin-top: 15px">
-                          <span class="tag is-primary is-light" style="margin: 2px">Tech professional</span>
-                          <span class="tag is-success is-light" style="margin: 2px">Consistent learner</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column is-8">
-                      <div class="testimonial-content" style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative">
-                        <div class="quote-icon" style="position: absolute; top: -10px; left: 30px; font-size: 3rem; color: #3e8ed0; line-height: 1">"</div>
-                        <p class="testimonial-text" style="font-size: 1.1rem; line-height: 1.7; color: #495057; margin-bottom: 25px; font-style: italic">
-                          "The AI feedback is incredibly detailed and helpful. Unlike other apps, Lingle explains WHY my German grammar is wrong and how to fix it. I've gone from beginner to intermediate in just 8 weeks!"
-                        </p>
-                        <div class="testimonial-metrics" style="border-top: 1px solid #e9ecef; padding-top: 20px">
-                          <div class="columns is-mobile">
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #3e8ed0">B1</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Level Achieved</div>
-                              </div>
-                            </div>
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #48c78e">56</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Days Active</div>
-                              </div>
-                            </div>
-                            <div class="column">
-                              <div class="metric-item" style="text-align: center">
-                                <div class="metric-value" style="font-size: 1.8rem; font-weight: 700; color: #9b59b6">3,120</div>
-                                <div class="metric-label" style="font-size: 0.8rem; color: #6c757d">Words Mastered</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- Carousel Navigation -->
-              <div class="testimonial-navigation" style="text-align: center; margin-top: 40px">
-                <button class="testimonial-nav-btn" id="prevBtn" onclick="changeTestimonial(-1)" style="background: #3e8ed0; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; margin: 0 10px; cursor: pointer; font-size: 1.2rem; transition: all 0.3s ease">
-                  ←
-                </button>
-                
-                <div class="testimonial-dots" style="display: inline-block; margin: 0 20px">
-                  <span class="dot active" onclick="currentTestimonial(1)" style="height: 15px; width: 15px; margin: 0 5px; background-color: #3e8ed0; border-radius: 50%; display: inline-block; cursor: pointer; transition: background-color 0.3s ease"></span>
-                  <span class="dot" onclick="currentTestimonial(2)" style="height: 15px; width: 15px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer; transition: background-color 0.3s ease"></span>
-                  <span class="dot" onclick="currentTestimonial(3)" style="height: 15px; width: 15px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer; transition: background-color 0.3s ease"></span>
-                </div>
-                
-                <button class="testimonial-nav-btn" id="nextBtn" onclick="changeTestimonial(1)" style="background: #3e8ed0; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; margin: 0 10px; cursor: pointer; font-size: 1.2rem; transition: all 0.3s ease">
-                  →
-                </button>
-              </div>
-            </div>
-
-            <!-- Social Proof Section -->
-            <div class="social-proof-section" style="margin-top: 60px; text-align: center">
-              <div class="columns is-centered">
-                <div class="column is-8">
-                  <div class="social-proof-box" style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08)">
-                    <h3 class="title is-4" style="color: #2c3e50; margin-bottom: 30px">Trusted by Language Learners Worldwide</h3>
-                    <div class="social-indicators" style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 30px">
-                      <div class="social-indicator">
-                        <div class="indicator-value" style="font-size: 1.5rem; font-weight: 700; color: #48c78e">4.9/5</div>
-                        <div class="indicator-label" style="font-size: 0.9rem; color: #6c757d">Beta Rating</div>
-                        <div class="stars" style="color: #ffd93d; font-size: 1.2rem">★★★★★</div>
-                      </div>
-                      <div class="social-indicator">
-                        <div class="indicator-value" style="font-size: 1.5rem; font-weight: 700; color: #3e8ed0">94%</div>
-                        <div class="indicator-label" style="font-size: 0.9rem; color: #6c757d">Would Recommend</div>
-                        <div class="badge" style="background: #e8f6f3; color: #48c78e; padding: 4px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; margin-top: 5px">VERIFIED</div>
-                      </div>
-                      <div class="social-indicator">
-                        <div class="indicator-value" style="font-size: 1.5rem; font-weight: 700; color: #ff6b6b">85%</div>
-                        <div class="indicator-label" style="font-size: 0.9rem; color: #6c757d">Daily Active Users</div>
-                        <div class="trend" style="color: #48c78e; font-size: 0.8rem; margin-top: 2px">↗ +12% this week</div>
-                      </div>
-                    </div>
-                    <div class="cta-section">
-                      <p style="color: #495057; margin-bottom: 20px; font-size: 1.1rem">Join our growing community of successful language learners</p>
-                      <a class="button is-success is-large" href="contact.html" style="margin-right: 15px">
-                        <strong>Start Your Success Story</strong>
-                      </a>
-                      <a class="button is-link is-medium is-outlined" href="about.html">
-                        <strong>Learn More</strong>
-                      </a>
-                      
-                      <!-- Success Story Sharing -->
-                      <div class="success-story-sharing" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #e9ecef;">
-                        <p style="color: #6c757d; margin-bottom: 15px; font-size: 0.95rem">Inspire others with our success stories:</p>
-                        <div class="buttons is-centered">
-                          <button class="button is-info is-small" onclick="shareSuccessStory('twitter')" style="margin: 3px;">
-                            <span class="icon" style="font-size: 0.9rem;">🐦</span>
-                            <span>Share Story</span>
-                          </button>
-                          <button class="button is-primary is-small" onclick="shareSuccessStory('facebook')" style="margin: 3px;">
-                            <span class="icon" style="font-size: 0.9rem;">📘</span>
-                            <span>Share Story</span>
-                          </button>
-                          <button class="button is-success is-small" onclick="shareSuccessStory('linkedin')" style="margin: 3px;">
-                            <span class="icon" style="font-size: 0.9rem;">💼</span>
-                            <span>LinkedIn</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Enhanced Newsletter Signup Section -->
-      <section class="hero is-medium newsletter-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; overflow: hidden;">
-        <!-- Background decorative elements -->
-        <div class="newsletter-bg-decoration" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 50%);"></div>
-        
-        <div class="hero-body" style="position: relative; z-index: 2; padding: 80px 30px;">
-          <div class="container">
-            <div class="has-text-centered" style="margin-bottom: 60px;">
-              <div class="newsletter-icon" style="margin-bottom: 30px;">
-                <span class="icon is-large" style="color: #ffd93d; font-size: 4rem;">📧</span>
-              </div>
-              <h1 class="title" style="font-size: 3rem; color: white; margin-bottom: 20px; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-                Join 2,847+ Language Learners
-              </h1>
-              <h2 class="subtitle" style="font-size: 1.4rem; color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto 40px; line-height: 1.6; font-weight: 300;">
-                Get exclusive AI language learning tips, early access to new features, and free resources delivered to your inbox
-              </h2>
-            </div>
-
-            <!-- Newsletter Benefits Grid -->
-            <div class="columns is-multiline is-centered" style="margin-bottom: 50px;">
-              <div class="column is-4">
-                <div class="newsletter-benefit" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.2); transition: transform 0.3s ease;">
-                  <div class="benefit-icon" style="margin-bottom: 20px;">
-                    <span class="icon is-large" style="color: #48c78e; font-size: 2.5rem;">🎯</span>
-                  </div>
-                  <h4 class="title is-5" style="color: white; margin-bottom: 15px; font-weight: 600;">Weekly AI Tips</h4>
-                  <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.5;">
-                    Get personalized language learning strategies and AI-powered study techniques every Tuesday
-                  </p>
-                </div>
-              </div>
-              
-              <div class="column is-4">
-                <div class="newsletter-benefit" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.2); transition: transform 0.3s ease;">
-                  <div class="benefit-icon" style="margin-bottom: 20px;">
-                    <span class="icon is-large" style="color: #3e8ed0; font-size: 2.5rem;">🚀</span>
-                  </div>
-                  <h4 class="title is-5" style="color: white; margin-bottom: 15px; font-weight: 600;">Early Access</h4>
-                  <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.5;">
-                    Be the first to try new features, beta games, and exclusive content before anyone else
-                  </p>
-                </div>
-              </div>
-              
-              <div class="column is-4">
-                <div class="newsletter-benefit" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; text-align: center; border: 1px solid rgba(255,255,255,0.2); transition: transform 0.3s ease;">
-                  <div class="benefit-icon" style="margin-bottom: 20px;">
-                    <span class="icon is-large" style="color: #ff6b6b; font-size: 2.5rem;">📚</span>
-                  </div>
-                  <h4 class="title is-5" style="color: white; margin-bottom: 15px; font-weight: 600;">Free Resources</h4>
-                  <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.5;">
-                    Download exclusive study guides, conversation starters, and grammar cheat sheets
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Lead Magnets Section -->
-            <div class="newsletter-magnets" style="background: rgba(255,255,255,0.95); border-radius: 25px; padding: 40px; margin-bottom: 50px; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
-              <div class="has-text-centered" style="margin-bottom: 30px;">
-                <h3 class="title is-4" style="color: #2c3e50; margin-bottom: 15px; font-weight: 600;">
-                  🎁 Sign up now and get instant access to:
-                </h3>
-              </div>
-              
-              <div class="columns is-multiline">
-                <div class="column is-6">
-                  <div class="magnet-item" style="display: flex; align-items: center; margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #48c78e;">
-                    <span class="icon is-medium" style="color: #48c78e; margin-right: 15px; font-size: 1.5rem;">📖</span>
-                    <div>
-                      <h5 style="font-weight: 600; color: #2c3e50; margin-bottom: 5px;">Ultimate Grammar Guide</h5>
-                      <p style="font-size: 0.9rem; color: #6c757d; margin: 0;">50-page comprehensive guide covering essential grammar rules</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="column is-6">
-                  <div class="magnet-item" style="display: flex; align-items: center; margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #3e8ed0;">
-                    <span class="icon is-medium" style="color: #3e8ed0; margin-right: 15px; font-size: 1.5rem;">💬</span>
-                    <div>
-                      <h5 style="font-weight: 600; color: #2c3e50; margin-bottom: 5px;">300 Conversation Starters</h5>
-                      <p style="font-size: 0.9rem; color: #6c757d; margin: 0;">Ready-to-use phrases for confident conversations</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="column is-6">
-                  <div class="magnet-item" style="display: flex; align-items: center; margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #ff6b6b;">
-                    <span class="icon is-medium" style="color: #ff6b6b; margin-right: 15px; font-size: 1.5rem;">🎧</span>
-                    <div>
-                      <h5 style="font-weight: 600; color: #2c3e50; margin-bottom: 5px;">Pronunciation Audio Pack</h5>
-                      <p style="font-size: 0.9rem; color: #6c757d; margin: 0;">Native speaker recordings for perfect pronunciation</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="column is-6">
-                  <div class="magnet-item" style="display: flex; align-items: center; margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #ffd93d;">
-                    <span class="icon is-medium" style="color: #e6c200; margin-right: 15px; font-size: 1.5rem;">⭐</span>
-                    <div>
-                      <h5 style="font-weight: 600; color: #2c3e50; margin-bottom: 5px;">VIP Beta Access</h5>
-                      <p style="font-size: 0.9rem; color: #6c757d; margin: 0;">Skip the waitlist and start learning immediately</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Newsletter Signup Form -->
-            <div class="newsletter-signup-container" style="max-width: 600px; margin: 0 auto;">
-              <form id="newsletter-form" class="newsletter-form" style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); position: relative; overflow: hidden;">
-                <!-- Form decoration -->
-                <div style="position: absolute; top: -50%; right: -20%; width: 100px; height: 100px; background: linear-gradient(45deg, #48c78e, #3e8ed0); border-radius: 50%; opacity: 0.1; transform: rotate(45deg);"></div>
-                
-                <div class="has-text-centered" style="margin-bottom: 30px;">
-                  <h3 class="title is-4" style="color: #2c3e50; margin-bottom: 10px;">Join the Lingle Community</h3>
-                  <p style="color: #6c757d; font-size: 0.95rem;">No spam, unsubscribe anytime. We respect your privacy.</p>
-                </div>
-                
-                <div class="field">
-                  <label class="label" for="newsletter-email" style="color: #495057; font-weight: 600;">Email Address <span style="color: #ff3860;">*</span></label>
-                  <div class="control has-icons-left">
-                    <input class="input is-medium" type="email" id="newsletter-email" placeholder="Enter your email address" required style="border-radius: 12px; border: 2px solid #e1e5e9; font-size: 1rem; padding: 12px 50px 12px 20px;">
-                    <span class="icon is-small is-left" style="color: #6c757d;">
-                      <i>📧</i>
-                    </span>
-                  </div>
-                  <p class="help is-danger is-hidden" id="newsletter-email-error"></p>
-                </div>
-                
-                <div class="field">
-                  <label class="label" for="newsletter-name" style="color: #495057; font-weight: 600;">First Name (Optional)</label>
-                  <div class="control has-icons-left">
-                    <input class="input is-medium" type="text" id="newsletter-name" placeholder="Your first name" style="border-radius: 12px; border: 2px solid #e1e5e9; font-size: 1rem; padding: 12px 50px 12px 20px;">
-                    <span class="icon is-small is-left" style="color: #6c757d;">
-                      <i>👤</i>
-                    </span>
-                  </div>
-                </div>
-                
-                <div class="field">
-                  <label class="label" for="newsletter-language" style="color: #495057; font-weight: 600;">Learning Goal (Optional)</label>
-                  <div class="control">
-                    <div class="select is-medium is-fullwidth" style="border-radius: 12px;">
-                      <select id="newsletter-language" style="border-radius: 12px; border: 2px solid #e1e5e9; font-size: 1rem;">
-                        <option value="">Select your target language</option>
-                        <option value="spanish">Spanish</option>
-                        <option value="french">French</option>
-                        <option value="german">German</option>
-                        <option value="italian">Italian</option>
-                        <option value="portuguese">Portuguese</option>
-                        <option value="chinese">Chinese</option>
-                        <option value="japanese">Japanese</option>
-                        <option value="korean">Korean</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="field">
-                  <div class="control">
-                    <button type="submit" class="button is-success is-large is-fullwidth" id="newsletter-submit" style="background: linear-gradient(135deg, #48c78e 0%, #3ec28a 100%); border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 600; height: 55px; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(72, 199, 142, 0.4);">
-                      <span class="icon">
-                        <i>🚀</i>
-                      </span>
-                      <span>Get My Free Resources</span>
-                    </button>
-                  </div>
-                </div>
-                
-                <div id="newsletter-feedback" style="margin-top: 20px;"></div>
-                
-                <!-- Trust indicators -->
-                <div class="newsletter-trust" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #e9ecef; text-align: center;">
-                  <div class="trust-indicators" style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
-                    <div class="trust-item" style="display: flex; align-items: center; gap: 8px;">
-                      <span style="color: #48c78e; font-size: 1.2rem;">🔒</span>
-                      <span style="font-size: 0.85rem; color: #6c757d;">Secure & Private</span>
-                    </div>
-                    <div class="trust-item" style="display: flex; align-items: center; gap: 8px;">
-                      <span style="color: #3e8ed0; font-size: 1.2rem;">📬</span>
-                      <span style="font-size: 0.85rem; color: #6c757d;">Weekly Updates</span>
-                    </div>
-                    <div class="trust-item" style="display: flex; align-items: center; gap: 8px;">
-                      <span style="color: #ff6b6b; font-size: 1.2rem;">✋</span>
-                      <span style="font-size: 0.85rem; color: #6c757d;">No Spam Promise</span>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <!-- Social Proof -->
-            <div class="newsletter-social-proof" style="margin-top: 40px; text-align: center;">
-              <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-bottom: 20px;">
-                Trusted by language learners from 50+ countries
-              </p>
-              <div class="proof-avatars" style="display: flex; justify-content: center; align-items: center; gap: -10px; margin-bottom: 15px;">
-                <div class="avatar" style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #48c78e, #3e8ed0); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; border: 3px solid white; margin-left: -10px;">S</div>
-                <div class="avatar" style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #ff6b6b, #ffd93d); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; border: 3px solid white; margin-left: -10px;">M</div>
-                <div class="avatar" style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #3e8ed0, #9b59b6); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; border: 3px solid white; margin-left: -10px;">A</div>
-                <div class="avatar" style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; border: 3px solid white; margin-left: -10px;">L</div>
-                <div class="plus-more" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; border: 3px solid white; margin-left: -10px;">+2K</div>
-              </div>
-              <div style="display: flex; justify-content: center; align-items: center; gap: 20px; color: rgba(255,255,255,0.7); font-size: 0.85rem;">
-                <span>⭐⭐⭐⭐⭐ 4.9/5 Rating</span>
-                <span>•</span>
-                <span>📈 94% Open Rate</span>
-                <span>•</span>
-                <span>🚀 Join 2,847+ learners</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="hero center what-is-lingle">
-        <div class="hero-body">
-        <h1 class="title has-text-centered">What is Lingle?</h1>
-        <h2 class="subtitle has-text-centered">
-          Lingle is an <strong>AI-powered</strong> language learning platform for learners of all levels.
-          
-        </h2>
-      </div>
-      </section>
-      
-      <!-- Enhanced Feature Sections -->
-      <section class="features-container">
-        <div class="container">
-          <div class="columns is-multiline is-vcentered">
-            
-            <!-- Daily Journal Feature -->
-            <div class="column is-12">
-              <div class="feature-card feature-card-left">
-                <div class="columns is-vcentered">
-                  <div class="column is-6">
-                    <div class="feature-content-text">
-                      <div class="feature-icon">
-                        <span class="icon is-large has-text-info">
-                          <i class="fas fa-journal-whills fa-3x">📝</i>
-                        </span>
-                      </div>
-                      <h3 class="title is-3 has-text-info feature-title">Daily Journal</h3>
-                      <p class="subtitle is-5 feature-description">
-                        Practice your skills by answering fun journal prompts. Enhance your writing with <strong>grammar checks</strong> and a built-in <strong>dictionary</strong>. AI grades your journal and provides detailed feedback.
-                      </p>
-                      <div class="feature-highlights">
-                        <div class="highlight-item">
-                          <span class="icon is-small has-text-success">
-                            <i>✓</i>
-                          </span>
-                          <span>AI-powered grammar checking</span>
-                        </div>
-                        <div class="highlight-item">
-                          <span class="icon is-small has-text-success">
-                            <i>✓</i>
-                          </span>
-                          <span>Built-in dictionary support</span>
-                        </div>
-                        <div class="highlight-item">
-                          <span class="icon is-small has-text-success">
-                            <i>✓</i>
-                          </span>
-                          <span>Detailed feedback and scoring</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-6">
-                    <div class="feature-visual">
-                      <div class="mock-journal">
-                        <div class="journal-header">
-                          <h4>Today's Prompt</h4>
-                          <p>Describe your perfect weekend</p>
-                        </div>
-                        <div class="journal-content">
-                          <p>My perfect weekend would involve...</p>
-                          <div class="ai-suggestion">
-                            <span class="suggestion-label">AI Suggestion:</span>
-                            <span>Consider adding more descriptive adjectives</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Translation Games Feature -->
-            <div class="column is-12">
-              <div class="feature-card feature-card-right alternate">
-                <div class="columns is-vcentered">
-                  <div class="column is-6">
-                    <div class="feature-visual">
-                      <div class="mock-game">
-                        <div class="game-header">
-                          <div class="game-progress">
-                            <div class="progress-bar" style="width: 75%"></div>
-                          </div>
-                          <div class="game-stats">
-                            <span>Score: 1,250</span>
-                            <span>Streak: 8</span>
-                          </div>
-                        </div>
-                        <div class="game-question">
-                          <p><strong>Translate:</strong> "Good morning!"</p>
-                          <div class="game-options">
-                            <button class="option correct">Buenos días</button>
-                            <button class="option">Buenas noches</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-6">
-                    <div class="feature-content-text">
-                      <div class="feature-icon">
-                        <span class="icon is-large has-text-success">
-                          <i class="fas fa-gamepad fa-3x">🎮</i>
-                        </span>
-                      </div>
-                      <h3 class="title is-3 has-text-success feature-title">Translation Games</h3>
-                      <p class="subtitle is-5 feature-description">
-                        Race around the track and beat your highscore. Translate <strong>AI-generated phrases</strong> to accelerate and unlock new levels.
-                      </p>
-                      <div class="feature-highlights">
-                        <div class="highlight-item">
-                          <span class="icon is-small has-text-success">
-                            <i>✓</i>
-                          </span>
-                          <span>Dynamic AI-generated content</span>
-                        </div>
-                        <div class="highlight-item">
-                          <span class="icon is-small has-text-success">
-                            <i>✓</i>
-                          </span>
-                          <span>Progressive difficulty levels</span>
-                        </div>
-                        <div class="highlight-item">
-                          <span class="icon is-small has-text-success">
-                            <i>✓</i>
-                          </span>
-                          <span>Competitive scoring system</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-   
-    
     </section>
 
-    <footer class="footer">
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">How Lingle Works</h2>
+        <div class="columns is-multiline">
+          <div class="column is-4">
+            <div class="box glass-card has-text-centered">
+              <div class="feature-emoji">✍️</div>
+              <h3 class="title is-5 mb-2">Write Naturally</h3>
+              <p>Express yourself in your target language through journaling, stories, and creative writing.</p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="box glass-card has-text-centered">
+              <div class="feature-emoji">🤖</div>
+              <h3 class="title is-5 mb-2">AI-Powered Feedback</h3>
+              <p>Get instant, personalized suggestions for grammar, vocabulary, and style improvements.</p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="box glass-card has-text-centered">
+              <div class="feature-emoji">📈</div>
+              <h3 class="title is-5 mb-2">Track Progress</h3>
+              <p>See your language skills improve over time with detailed analytics and achievements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="section has-background-light">
+    <h2 class="title has-text-centered z-top">Explore Lingle</h2>
+    <p class="subtitle has-text-centered mb-5 z-top">Three flagship experiences designed to build real fluency</p>
+
+    <div class="columns is-multiline">
+          <!-- Journal -->
+          <div class="column is-12 is-4-desktop">
+            <div class="box glass-card">
+              <div class="columns is-vcentered">
+                <div class="column is-5">
+                  <img class="screenshot" src="assets/images/Journal.PNG" alt="Journal feature screenshot" />
+                </div>
+                <div class="column is-7">
+                  <h3 class="title is-4 mb-2">Journal: Fluency through daily writing</h3>
+                  <p class="mb-3">Write about your life, ideas, and opinions, and get inline AI suggestions plus a clear post-writing score so you know exactly what to fix next.</p>
+                  <ul>
+                    <li class="highlight-item"><span class="icon">✓</span>Human-like suggestions, not just autocorrect</li>
+                    <li class="highlight-item"><span class="icon">✓</span>AI Score clarifies grammar, vocab, and style priorities</li>
+                    <li class="highlight-item"><span class="icon">✓</span>Streaks and goals that make practice automatic</li>
+                    <li class="highlight-item"><span class="icon">✓</span>See progress with before/after diffs over time</li>
+                  </ul>
+                  <div class="buttons mt-4">
+                    <a class="button is-success" href="contact.html" aria-label="Join the beta to try Journal">Join the Beta</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Translation Race -->
+          <div class="column is-12 is-4-desktop">
+            <div class="box glass-card">
+              <div class="columns is-vcentered">
+                <div class="column is-5">
+                  <img class="screenshot" src="assets/images/TranslationRace.PNG" alt="Translation Race screenshot" />
+                </div>
+                <div class="column is-7">
+                  <h3 class="title is-4 mb-2">Translation Race: Speed meets accuracy</h3>
+                  <p class="mb-3">Compete to translate the fastest and the best. Real-time feedback rewards precision first, then speed, so you learn to think and translate like a native.</p>
+                  <ul>
+                    <li class="highlight-item"><span class="icon">✓</span>Adaptive difficulty keeps you in the flow, never bored</li>
+                    <li class="highlight-item"><span class="icon">✓</span>Fair scoring that balances accuracy and time</li>
+                    <li class="highlight-item"><span class="icon">✓</span>Leaderboards and friend challenges for motivation</li>
+                    <li class="highlight-item"><span class="icon">✓</span>Practice mode with hints when you want to slow down</li>
+                  </ul>
+                  <div class="buttons mt-4">
+                    <a class="button is-success" href="contact.html" aria-label="Join the beta to play Translation Race">Join the Beta</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- News Learning -->
+          <div class="column is-12 is-4-desktop">
+            <div class="box glass-card">
+              <div class="columns is-vcentered">
+                <div class="column is-5">
+                  <img class="screenshot" src="assets/images/NewsQuiz.PNG" alt="News Quiz screenshot" />
+                </div>
+                <div class="column is-7">
+                  <h3 class="title is-4 mb-2">The News: Language from the real world</h3>
+                  <p class="mb-3">Learn through topics you actually care about. Bite‑size articles, smart glossaries, and interactive quizzes turn news into lasting vocabulary and comprehension.</p>
+                  <ul>
+                    <li class="highlight-item"><span class="icon">✓</span>Level‑matched feeds by topic and difficulty</li>
+                    <li class="highlight-item"><span class="icon">✓</span>Tap‑to‑define with examples in context</li>
+                    <li class="highlight-item"><span class="icon">✓</span>Comprehension quizzes and spaced review</li>
+                    <li class="highlight-item"><span class="icon">✓</span>Build a real‑world vocabulary you’ll use</li>
+                  </ul>
+                  <div class="buttons mt-4">
+                    <a class="button is-success" href="contact.html" aria-label="Join the beta to learn with news">Join the Beta</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
+    <section class="section has-text-centered">
+      <div class="container">
+        <div class="glass-panel">
+            <h2 class="title" style="padding: 1rem;">Get early access
+          </h2>
+          <p class="subtitle">We’re rolling out invites to the beta and building fast with your feedback.</p>
+          <div class="buttons is-centered">
+            <a class="button is-success is-medium" href="contact.html"><strong>Join the Beta</strong></a>
+          </div>
+          <div class="mt-4">
+            <img class="app-badge" src="assets/images/download-app-store.png" alt="Download on the App Store" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer glass-footer">
       <div class="content has-text-centered">
-        <p>
-          <div class="columns">
-
-            <div class="column">
-          <strong>Lingle</strong> by <a href="/about.html">Ari Yamashita and Nikhil Mahesh</a>.
-
-          <div class="footer-buttons">
-            <a class="button is-small" href="about.html">
-              About
-            </a>
-            <a class="button is-small" href="development.html">
-              Development
-            </a>
-            <a class="button is-small" href="tips.html">
-              Tips
-            </a>
-            <a class="button is-small" href="gallery.html">
-             Gallery
-            </a>
-            <a class="button is-small" href="demo.html">
-            Demo
-            </a>
-   
-            <a class="button is-small" href="contact.html">
-              Contact us
-            </a>
-          </div>
-      </div>
-      <div class="column">
-        <p class="" style="">Beta testing is now open! Join today.</p>
-        <div class="buttons">
-          <a class="button is-success" style="margin-left: auto; margin-right: auto; margin-bottom: 10px" href="contact.html">
-            <strong>Join the Beta</strong>
-          </a>
-          <a class="button is-link" style="margin-left: auto; margin-right: auto" href="download.html">
-            <strong>Join the Waitlist</strong>
-          </a>
-        </div>
-      </div>
-      <div class="column">
-        <p class="" style="">Coming soon to the app store.</p>
-        <figure class="image image-center" style="width: 150px;">
-          <img src="assets/images/download-app-store.png" alt="Download on the App Store" style="border-radius: 20px; margin-bottom: 5px"/>
-          <p class="" style="font-size: 0.65em">Apple and the Apple logo are trademarks of Apple Inc.</p>
-        </figure>
-        
-        <!-- Social Media Links -->
-        <div class="social-media-footer" style="margin-top: 25px; text-align: center;">
-          <p style="font-size: 0.9rem; color: #6c757d; margin-bottom: 15px;">Follow our journey:</p>
-          <div class="social-links" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-            <a href="#" class="social-link" onclick="openSocialMedia('twitter')" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1da1f2; color: white; border-radius: 50%; text-decoration: none; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-              <span style="font-size: 1.2rem;">🐦</span>
-            </a>
-            <a href="#" class="social-link" onclick="openSocialMedia('instagram')" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: white; border-radius: 50%; text-decoration: none; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-              <span style="font-size: 1.2rem;">📷</span>
-            </a>
-            <a href="#" class="social-link" onclick="openSocialMedia('linkedin')" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #0077b5; color: white; border-radius: 50%; text-decoration: none; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-              <span style="font-size: 1.2rem;">💼</span>
-            </a>
-            <a href="#" class="social-link" onclick="openSocialMedia('tiktok')" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #000; color: white; border-radius: 50%; text-decoration: none; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-              <span style="font-size: 1.2rem;">🎵</span>
-            </a>
-            <a href="#" class="social-link" onclick="openSocialMedia('youtube')" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #ff0000; color: white; border-radius: 50%; text-decoration: none; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-              <span style="font-size: 1.2rem;">📺</span>
-            </a>
-          </div>
-          <div class="social-stats" style="margin-top: 15px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; font-size: 0.8rem; color: #6c757d;">
-            <span>📷 2.8K followers</span>
-            <span>🐦 1.2K followers</span>
-            <span>💼 850 connections</span>
-          </div>
-        </div>
-      </div>
-      </div>
-         
-          </div>
-        </p>
+        <p><strong>Lingle</strong> by <a href="about.html">Ari Yamashita and Nikhil Mahesh</a></p>
+        <p><a href="contact.html">Contact</a> | <a href="about.html">About</a></p>
       </div>
     </footer>
 
+  <script src="script.js" defer></script>
   </body>
-  <script src="script.js"></script>
 </html>
