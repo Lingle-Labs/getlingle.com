@@ -116,25 +116,13 @@
                   </div>
                   <p id="ageRange-error" class="help is-danger is-hidden" role="alert"></p>
                 </div>
-                <!-- 6. Used other service -->
+                <!-- 6. Services used (optional) -->
                 <div class="field">
-                  <label class="label">6. Have you used another language learning service before? <span class="has-text-danger">*</span></label>
-                  <div class="control pretty-options">
-                    <label class="pretty-option"><input type="radio" name="usedService" value="yes" id="usedServiceYes"> <span>Yes</span></label>
-                    <label class="pretty-option"><input type="radio" name="usedService" value="no"> <span>No</span></label>
+                  <label class="label">6. If so, what services have you used? <span class="text-muted">(optional)</span></label>
+                  <div class="control">
+                    <input class="input" type="text" id="servicesText" name="servicesText" placeholder="e.g., Duolingo, Babbel, Memrise" aria-describedby="servicesText-error">
                   </div>
-                  <p id="usedService-error" class="help is-danger is-hidden" role="alert"></p>
-                </div>
-
-                <!-- 7. If so, which services (conditional) -->
-                <div id="servicesSection" class="is-hidden">
-                  <div class="field">
-                    <label class="label">7. If so, what services have you used?</label>
-                    <div class="control">
-                      <input class="input" type="text" id="servicesText" name="servicesText" placeholder="e.g., Duolingo, Babbel, Memrise" aria-describedby="servicesText-error">
-                    </div>
-                    <p id="servicesText-error" class="help is-danger is-hidden" role="alert"></p>
-                  </div>
+                  <p id="servicesText-error" class="help is-danger is-hidden" role="alert"></p>
                 </div>
 
                 <div class="field is-grouped is-grouped-centered">
@@ -185,7 +173,7 @@
     <script>
       // Survey form: validation and interactions
       document.addEventListener('DOMContentLoaded', function() {
-        const form = document.getElementById('surveyForm');
+  const form = document.getElementById('contact');
         const formFeedback = document.getElementById('formFeedback');
 
         // Helpers
@@ -260,23 +248,8 @@
 
         function hideFormFeedback() { formFeedback.classList.add('is-hidden'); }
 
-        // Interactive fields: usedService toggles services text input
-        const usedServiceRadios = document.querySelectorAll('input[name="usedService"]');
-        const servicesSection = document.getElementById('servicesSection');
-        const servicesText = document.getElementById('servicesText');
-        usedServiceRadios.forEach(r => r.addEventListener('change', () => {
-          if (document.getElementById('usedServiceYes').checked) {
-            servicesSection.classList.remove('is-hidden');
-            servicesText.disabled = false;
-            servicesText.focus();
-          } else {
-            servicesSection.classList.add('is-hidden');
-            servicesText.value = '';
-            servicesText.disabled = true;
-            document.getElementById('servicesText-error').classList.add('is-hidden');
-          }
-          clearGroupError('usedService', 'usedService-error');
-        }));
+  // Field refs
+  const servicesText = document.getElementById('servicesText');
 
         // Real-time validation
         document.getElementById('fullName').addEventListener('blur', function() {
@@ -299,7 +272,7 @@
         });
 
         // Clear group errors on change
-  ['experience', 'level', 'ageRange', 'usedService'].forEach(name => {
+  ['experience', 'level', 'ageRange'].forEach(name => {
           document.querySelectorAll(`input[name="${name}"]`).forEach(i => i.addEventListener('change', () => {
             const errId = name + '-error';
             clearGroupError(name, errId);
@@ -333,20 +306,7 @@
           const ageRange = document.querySelector('input[name="ageRange"]:checked');
           if (!ageRange) { showGroupError('ageRange', 'ageRange-error', 'Please select your age range.'); hasErrors = true; }
 
-          // 6. Used other service
-          const usedService = document.querySelector('input[name="usedService"]:checked');
-          if (!usedService) { showGroupError('usedService', 'usedService-error', 'Please select Yes or No.'); hasErrors = true; }
-
-          // 7. Services (conditional)
-          if (usedService && usedService.value === 'yes') {
-            if (!servicesText.value.trim()) {
-              const err = document.getElementById('servicesText-error');
-              err.textContent = 'Please list the services you\'ve used.';
-              err.classList.remove('is-hidden');
-              servicesText.classList.add('is-danger');
-              hasErrors = true;
-            }
-          }
+          // 6. Services used is optional; no validation required
 
           if (hasErrors) {
             showFormFeedback('Please correct the errors above and try again.', 'error');
@@ -364,18 +324,15 @@
             showFormFeedback('Thanks for completing the Language Learning Survey! We\'ll use your responses to improve Lingle.', 'success');
             form.reset();
 
-            // Reset conditional UI
-            servicesSection.classList.add('is-hidden');
-            servicesText.disabled = true;
-
             // Reset button
             submitButton.innerHTML = originalText;
             submitButton.disabled = false;
 
             // Clear errors
             ['fullName','email','servicesText'].forEach(clearFieldError);
-            ['experience','level','ageRange','usedService'].forEach(name => clearGroupError(name, name + '-error'));
-            document.getElementById('servicesText-error').classList.add('is-hidden');
+            ['experience','level','ageRange'].forEach(name => clearGroupError(name, name + '-error'));
+            const stErr = document.getElementById('servicesText-error');
+            if (stErr) stErr.classList.add('is-hidden');
           }, 1200);
         });
       });
