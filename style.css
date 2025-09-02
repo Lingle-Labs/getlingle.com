@@ -1360,9 +1360,9 @@ body {
 }
 
 /* Outlined CTA button (unfilled + shadow) */
-.button.cta-outline {
+/*.button.cta-outline {
     background-color: transparent !important;
-    color: #257942 !important; /* darker success text for contrast */
+    color: #257942 !important; /* darker success text for contrast 
     border: 2px solid #48c78e !important;
     box-shadow: 0 8px 20px rgba(72, 199, 142, 0.25);
     font-weight: 700;
@@ -1388,6 +1388,7 @@ body {
 .button.cta-outline:focus-visible {
     box-shadow: 0 0 0 0.125em rgba(72, 199, 142, 0.35);
 }
+*/
 
 /* Add this after your existing .button.cta-outline styles */
 
