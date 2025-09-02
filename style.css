@@ -942,7 +942,6 @@ body {
 }
 
 .about-description {
-    font-size: var(--text-xl);
     line-height: var(--leading-relaxed);
     color: var(--text-secondary);
     text-align: center;
