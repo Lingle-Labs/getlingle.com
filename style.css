@@ -1362,7 +1362,7 @@ body {
 /* Outlined CTA button (unfilled + shadow) */
 .button.cta-outline {
     background-color: transparent !important;
-    color: #257942 !important; /* darker success text for contrast */
+    color: #257942 !important; /* darker success text for contrast*/
     border: 2px solid #48c78e !important;
     box-shadow: 0 8px 20px rgba(72, 199, 142, 0.25);
     font-weight: 700;
@@ -1388,6 +1388,33 @@ body {
 .button.cta-outline:focus-visible {
     box-shadow: 0 0 0 0.125em rgba(72, 199, 142, 0.35);
 }
+
+
+/* Add this after your existing .button.cta-outline styles */
+.button.cta-outline {
+    background-color: rgba(72, 199, 142, 0.08) !important; /* Very light green background */
+}
+
+.button.cta-outline:hover {
+    background-color: rgba(72, 199, 142, 0.12) !important; /* Slightly more visible on hover */
+}
+
+/* Make submit survey button match the outline style */
+.button.is-success {
+    background-color: rgba(72, 199, 142, 0.08) !important; /* Same light green background */
+    color: #257942 !important; /* Darker green text for contrast */
+    border: 2px solid #48c78e !important; /* Green border */
+    box-shadow: 0 8px 20px rgba(72, 199, 142, 0.25);
+    font-weight: 700;
+  margin-top: 20px
+}
+
+.button.is-success:hover {
+    background-color: rgba(72, 199, 142, 0.12) !important; /* Same hover effect */
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(72, 199, 142, 0.3);
+}
+
 
 /* Form validation enhancements */
 .input.is-danger, .textarea.is-danger, .select select.is-danger {
@@ -2095,3 +2122,9 @@ body {
 
 .text-095 { font-size: 0.95rem; }
 
+
+.screenshot {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
