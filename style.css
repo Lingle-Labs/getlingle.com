@@ -1400,7 +1400,20 @@ body {
 }
 
 /* Make submit survey button match the outline style */
+.button.is-success {
+    background-color: rgba(72, 199, 142, 0.08) !important; /* Same light green background */
+    color: #257942 !important; /* Darker green text for contrast */
+    border: 2px solid #48c78e !important; /* Green border */
+    box-shadow: 0 8px 20px rgba(72, 199, 142, 0.25);
+    font-weight: 700;
+  margin-top: 20px
+}
 
+.button.is-success:hover {
+    background-color: rgba(72, 199, 142, 0.12) !important; /* Same hover effect */
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(72, 199, 142, 0.3);
+}
 
 
 /* Form validation enhancements */
