@@ -58,7 +58,11 @@
           <div class="column is-6">
       <div class="box glass-card">
               <h3 class="title is-4 has-text-centered">Language Learning Survey</h3>
-              <form id="contact" netlify action="/thanks">
+              <form id="contact" name="beta-survey" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks">
+                <input type="hidden" name="form-name" value="beta-survey">
+                <p class="is-hidden">
+                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </p>
                 <!-- Form feedback area -->
                 <div id="formFeedback" class="notification is-hidden" role="alert" aria-live="polite"></div>
 
@@ -170,174 +174,8 @@
       </div>
     </footer>
 
-    <script>
-      // Survey form: validation and interactions
-      document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('contact');
-        const formFeedback = document.getElementById('formFeedback');
+  <!-- Removed custom form JS to allow native Netlify form submission -->
 
-        // Helpers
-        function validateFullName(name) {
-          const trimmed = name.trim();
-          if (!trimmed) return 'Full name is required.';
-          if (trimmed.length < 2) return 'Name must be at least 2 characters long.';
-          if (!/^[a-zA-Z\s'\-]+$/.test(trimmed)) return 'Name can only contain letters, spaces, hyphens, and apostrophes.';
-          return null;
-        }
-
-        function validateEmail(email) {
-          const trimmed = email.trim();
-          if (!trimmed) return 'Email address is required.';
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (!emailRegex.test(trimmed)) return 'Please enter a valid email address.';
-          return null;
-        }
-
-        function showFieldError(fieldId, message) {
-          const field = document.getElementById(fieldId);
-          const errorEl = document.getElementById(fieldId + '-error');
-          if (field) {
-            field.classList.add('is-danger');
-            field.setAttribute('aria-invalid', 'true');
-          }
-          if (errorEl) {
-            errorEl.textContent = message;
-            errorEl.classList.remove('is-hidden');
-          }
-        }
-
-        function clearFieldError(fieldId) {
-          const field = document.getElementById(fieldId);
-          const errorEl = document.getElementById(fieldId + '-error');
-          if (field) {
-            field.classList.remove('is-danger');
-            field.setAttribute('aria-invalid', 'false');
-          }
-          if (errorEl) {
-            errorEl.textContent = '';
-            errorEl.classList.add('is-hidden');
-          }
-        }
-
-        function showGroupError(name, errorId, message) {
-          const inputs = Array.from(document.querySelectorAll(`input[name="${name}"]`));
-          inputs.forEach(i => i.classList.add('is-danger'));
-          const errorEl = document.getElementById(errorId);
-          if (errorEl) {
-            errorEl.textContent = message;
-            errorEl.classList.remove('is-hidden');
-          }
-        }
-
-        function clearGroupError(name, errorId) {
-          const inputs = Array.from(document.querySelectorAll(`input[name="${name}"]`));
-          inputs.forEach(i => i.classList.remove('is-danger'));
-          const errorEl = document.getElementById(errorId);
-          if (errorEl) {
-            errorEl.textContent = '';
-            errorEl.classList.add('is-hidden');
-          }
-        }
-
-        function showFormFeedback(message, type) {
-          formFeedback.textContent = message;
-          formFeedback.className = 'notification ' + (type === 'success' ? 'is-success' : 'is-danger');
-          formFeedback.classList.remove('is-hidden');
-          formFeedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        function hideFormFeedback() { formFeedback.classList.add('is-hidden'); }
-
-  // Field refs
-  const servicesText = document.getElementById('servicesText');
-
-        // Real-time validation
-        document.getElementById('fullName').addEventListener('blur', function() {
-          const error = validateFullName(this.value);
-          if (error) showFieldError('fullName', error); else clearFieldError('fullName');
-        });
-        document.getElementById('email').addEventListener('blur', function() {
-          const error = validateEmail(this.value);
-          if (error) showFieldError('email', error); else clearFieldError('email');
-        });
-
-        // Clear text errors on input
-  ['fullName', 'email', 'servicesText'].forEach(id => {
-          const el = document.getElementById(id);
-          el.addEventListener('input', () => {
-            el.classList.remove('is-danger');
-            const err = document.getElementById(id + '-error');
-            if (err) err.classList.add('is-hidden');
-          });
-        });
-
-        // Clear group errors on change
-  ['experience', 'level', 'ageRange'].forEach(name => {
-          document.querySelectorAll(`input[name="${name}"]`).forEach(i => i.addEventListener('change', () => {
-            const errId = name + '-error';
-            clearGroupError(name, errId);
-          }));
-        });
-
-        // Submit
-        form.addEventListener('submit', function(e) {
-          e.preventDefault();
-          hideFormFeedback();
-
-          let hasErrors = false;
-
-          // 1. Name
-          const nameErr = validateFullName(document.getElementById('fullName').value);
-          if (nameErr) { showFieldError('fullName', nameErr); hasErrors = true; }
-
-          // 2. Email
-          const emailErr = validateEmail(document.getElementById('email').value);
-          if (emailErr) { showFieldError('email', emailErr); hasErrors = true; }
-
-          // 3. Experience
-          const experience = document.querySelector('input[name="experience"]:checked');
-          if (!experience) { showGroupError('experience', 'experience-error', 'Please select an option.'); hasErrors = true; }
-
-          // 4. Level
-          const level = document.querySelector('input[name="level"]:checked');
-          if (!level) { showGroupError('level', 'level-error', 'Please select your level.'); hasErrors = true; }
-
-          // 5. Age range
-          const ageRange = document.querySelector('input[name="ageRange"]:checked');
-          if (!ageRange) { showGroupError('ageRange', 'ageRange-error', 'Please select your age range.'); hasErrors = true; }
-
-          // 6. Services used is optional; no validation required
-
-          if (hasErrors) {
-            showFormFeedback('Please correct the errors above and try again.', 'error');
-            return;
-          }
-
-          // Show loading state
-          const submitButton = form.querySelector('button[type="submit"]');
-          const originalText = submitButton.innerHTML;
-          submitButton.innerHTML = '<span class="loader"></span> Submitting...';
-          submitButton.disabled = true;
-
-          // Simulate form submission
-          setTimeout(function() {
-            showFormFeedback('Thanks for completing the Language Learning Survey! We\'ll use your responses to improve Lingle.', 'success');
-            form.reset();
-
-            // Reset button
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-
-            // Clear errors
-            ['fullName','email','servicesText'].forEach(clearFieldError);
-            ['experience','level','ageRange'].forEach(name => clearGroupError(name, name + '-error'));
-            const stErr = document.getElementById('servicesText-error');
-            if (stErr) stErr.classList.add('is-hidden');
-          }, 1200);
-        });
-      });
-    </script>
-
+    <script src="script.js" defer></script>
   </body>
-  <script src="script.js" defer></script>
 </html>
