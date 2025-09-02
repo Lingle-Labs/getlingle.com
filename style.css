@@ -2095,3 +2095,9 @@ body {
 
 .text-095 { font-size: 0.95rem; }
 
+
+.screenshot {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
