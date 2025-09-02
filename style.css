@@ -942,14 +942,13 @@ body {
 }
 
 .about-description {
-    font-size: var(--text-xl);
+  font-size: var(--text-xl);
     line-height: var(--leading-relaxed);
     color: var(--text-secondary);
     text-align: center;
     max-width: 800px;
     margin: 0 auto var(--space-16);
     padding: 0 var(--space-4);
-    font-weight: var(--font-light);
 }
 
 .team-section {
