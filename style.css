@@ -589,6 +589,17 @@ body {
     height: 40px;
 }
 
+/* Inline showcase image between hero and features */
+.inline-showcase {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Simple padding utility */
+.p-4 { padding: 1rem !important; }
+
 .hero-subtitle {
     font-size: var(--text-2xl);
     margin: var(--space-6) 0;
