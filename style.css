@@ -2138,3 +2138,71 @@ body {
   box-shadow: none;
   outline: none;
 }
+
+/* Privacy Policy Styles */
+.policy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.policy-content .content h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid rgba(62, 142, 208, 0.2);
+}
+
+.policy-content .content h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--text-secondary);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+}
+
+.policy-content .content p {
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.policy-content .content ul {
+  margin-left: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.policy-content .content ul li {
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.policy-content .content ul ul {
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.policy-content .content a {
+  color: #3e8ed0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.policy-content .content a:hover {
+  color: #2b6cb0;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .policy-content {
+    padding: var(--space-4) var(--space-4);
+  }
+  
+  .policy-content .content h2 {
+    font-size: var(--text-xl);
+  }
+}
