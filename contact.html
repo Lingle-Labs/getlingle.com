@@ -30,7 +30,7 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button cta-outline" href="contact.html"><strong>Join the Beta</strong></a>
+              <a href="https://apps.apple.com/us/app/lingle-language-learning/id6754832821" class="is-inline-block" style="line-height:0;"><img src="assets/images/download-app-store.png" alt="Download on the App Store" style="height: 55px; width: auto;" /></a>
             </div>
           </div>
         </div>
@@ -42,12 +42,18 @@
     <div class="container glass-panel">
       <div class="columns is-centered">
         <div class="column is-8">
-          <h1 class="title has-text-centered">Join the Beta</h1>
+          <h1 class="title has-text-centered">Contact Us</h1>
           <h2 class="subtitle has-text-centered" style="margin-top: 20px">
-            Be among the first to experience AI-powered language learning through writing.
+            We'd love to hear from you! Have questions, feedback, or need support?
           </h2>
-          <div class="notification is-info is-light has-text-centered" style="margin-top: 30px; border-radius: 12px;">
-            <p><strong>Beta Note:</strong> Lingle currently supports Spanish and French modes only. Additional languages will be available in the full release.</p>
+          <div class="has-text-centered" style="margin-top: 30px;">
+            <p>Email us at: <strong><a href="mailto:hello@getlingle.com">hello@getlingle.com</a></strong></p>
+          </div>
+          <div class="has-text-centered mt-6">
+            <h3 class="title is-5">Get Lingle Today</h3>
+            <a href="https://apps.apple.com/us/app/lingle-language-learning/id6754832821">
+              <img class="app-badge" src="assets/images/download-app-store.png" alt="Download on the App Store" style="max-width: 200px; height: auto;" />
+            </a>
           </div>
         </div>
       </div>
@@ -55,126 +61,10 @@
   </div>
 </section>
 
-  <section class="section beta-form">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-6">
-      <div class="box glass-card">
-              <h3 class="title is-4 has-text-centered">Language Learning Survey</h3>
-              <form id="contact" name="beta-survey" method="POST" action="/thanks" netlify>
-                <input type="hidden" name="form-name" value="beta-survey">
-                <p class="is-hidden">
-                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </p>
-                <!-- Form feedback area -->
-                <div id="formFeedback" class="notification is-hidden" role="alert" aria-live="polite"></div>
-
-                <!-- 1. Name -->
-                <div class="field">
-                  <label class="label" for="fullName">1. What is your first and last name? <span class="has-text-danger">*</span></label>
-                  <div class="control">
-                    <input class="input" type="text" id="fullName" name="fullName" placeholder="First Last" required aria-describedby="fullName-error">
-                  </div>
-                  <p id="fullName-error" class="help is-danger is-hidden" role="alert"></p>
-                </div>
-
-                <!-- 2. Email -->
-                <div class="field">
-                  <label class="label" for="email">2. Which email should we use to contact you? <span class="has-text-danger">*</span></label>
-                  <div class="control">
-                    <input class="input" type="email" id="email" name="email" placeholder="you@example.com" required aria-describedby="email-error">
-                  </div>
-                  <p id="email-error" class="help is-danger is-hidden" role="alert"></p>
-                </div>
-
-                <!-- 3. Experience -->
-                <div class="field">
-                  <label class="label">3. Do you have language learning experience in French, Spanish, or both? <span class="has-text-danger">*</span></label>
-                  <div class="control pretty-options">
-                    <label class="pretty-option"><input type="radio" name="experience" value="spanish"> <span>Spanish</span></label>
-                    <label class="pretty-option"><input type="radio" name="experience" value="french"> <span>French</span></label>
-                    <label class="pretty-option"><input type="radio" name="experience" value="both"> <span>Both</span></label>
-                    <label class="pretty-option"><input type="radio" name="experience" value="neither"> <span>I have not studied either language</span></label>
-                  </div>
-                  <p id="experience-error" class="help is-danger is-hidden" role="alert"></p>
-                </div>
-      
-
-                <!-- 4. Level -->
-                <div class="field">
-                  <label class="label">4. In the language you've studied the most, what would you say is your level of mastery? <span class="has-text-danger">*</span></label>
-                  <div class="control pretty-options">
-                    <label class="pretty-option"><input type="radio" name="level" value="beginner"> <span>Beginner (6 months – 1 year)</span></label>
-                    <label class="pretty-option"><input type="radio" name="level" value="intermediate"> <span>Intermediate (1 – 3 years)</span></label>
-                    <label class="pretty-option"><input type="radio" name="level" value="advanced"> <span>Advanced (3 – 5 years)</span></label>
-                    <label class="pretty-option"><input type="radio" name="level" value="near_fluent"> <span>Near fluent (&gt; 5 years)</span></label>
-                  </div>
-                  <p id="level-error" class="help is-danger is-hidden" role="alert"></p>
-                </div>
-
-                <!-- 5. Age range -->
-                <div class="field">
-                  <label class="label">5. What is your age range? <span class="has-text-danger">*</span></label>
-                  <div class="control pretty-options">
-                    <label class="pretty-option"><input type="radio" name="ageRange" value="1-18"> <span>1–18</span></label>
-                    <label class="pretty-option"><input type="radio" name="ageRange" value="18-34"> <span>18–34</span></label>
-                    <label class="pretty-option"><input type="radio" name="ageRange" value="35-50"> <span>35–50</span></label>
-                    <label class="pretty-option"><input type="radio" name="ageRange" value="51-69"> <span>51–69</span></label>
-                    <label class="pretty-option"><input type="radio" name="ageRange" value="70+"> <span>70 and older</span></label>
-                  </div>
-                  <p id="ageRange-error" class="help is-danger is-hidden" role="alert"></p>
-                </div>
-                <!-- 6. Services used (optional) -->
-                <div class="field">
-                  <label class="label">6. What language learning services or apps have you used? <span class="text-muted">(optional)</span></label>
-                  <div class="control">
-                    <input class="input" type="text" id="servicesText" name="servicesText" placeholder="e.g., Duolingo, Babbel, Memrise" aria-describedby="servicesText-error">
-                  </div>
-                  <p id="servicesText-error" class="help is-danger is-hidden" role="alert"></p>
-                </div>
-
-                <div class="field is-grouped is-grouped-centered">
-                  <div class="control">
-                    <button class="button is-success is-large" type="submit">
-                      <strong>Submit Survey</strong>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <section class="section has-background-light">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-8 has-text-centered">
-            <h3 class="title is-4">Why Join the Beta?</h3>
-            <div class="columns">
-              <div class="column">
-        <div class="box glass-card">
-                  <h4 class="title is-5 has-text-success">Early Access</h4>
-                  <p>Be among the first to experience AI-powered language learning through writing</p>
-                </div>
-              </div>
-              <div class="column">
-        <div class="box glass-card">
-                  <h4 class="title is-5 has-text-info">Shape the Product</h4>
-                  <p>Your feedback will help us build the best language learning experience</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   <footer class="footer glass-footer">
       <div class="content has-text-centered">
         <p><strong>Lingle</strong> by <a href="about.html">Ari Yamashita and Nikhil Mahesh</a></p>
-        <p>Questions about the beta? <a href="mailto:hello@getlingle.com">Contact us!</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        <p>Questions? <a href="mailto:hello@getlingle.com">Contact us!</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
   <p class="is-size-7">© 2026 Lingle LLC. All rights reserved.</p>
       </div>
     </footer>
